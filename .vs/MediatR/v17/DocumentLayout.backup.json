@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CustomMediatR\\MediatR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|d:\\custommediatr\\mediatr\\mediatr\\features\\getallgames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|solutionrelative:mediatr\\features\\getallgames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|d:\\custommediatr\\mediatr\\mediatr\\custommediatr\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|solutionrelative:mediatr\\custommediatr\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|d:\\custommediatr\\mediatr\\mediatr\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|solutionrelative:mediatr\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|d:\\custommediatr\\mediatr\\mediatr\\custommediatr\\custommediatr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|solutionrelative:mediatr\\custommediatr\\custommediatr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|d:\\custommediatr\\mediatr\\mediatr\\custommediatr\\ipublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{508BB293-1D80-4A96-A3C2-CA11DA997D25}|MediatR\\MediatR.csproj|solutionrelative:mediatr\\custommediatr\\ipublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetAllGames.cs",
+              "DocumentMoniker": "D:\\CustomMediatR\\MediatR\\MediatR\\Features\\GetAllGames.cs",
+              "RelativeDocumentMoniker": "MediatR\\Features\\GetAllGames.cs",
+              "ToolTip": "D:\\CustomMediatR\\MediatR\\MediatR\\Features\\GetAllGames.cs",
+              "RelativeToolTip": "MediatR\\Features\\GetAllGames.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwEIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T10:48:05.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\CustomMediatR\\MediatR\\MediatR\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "MediatR\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\CustomMediatR\\MediatR\\MediatR\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "MediatR\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T10:48:01.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomMediatR.cs",
+              "DocumentMoniker": "D:\\CustomMediatR\\MediatR\\MediatR\\CustomMediatR\\CustomMediatR.cs",
+              "RelativeDocumentMoniker": "MediatR\\CustomMediatR\\CustomMediatR.cs",
+              "ToolTip": "D:\\CustomMediatR\\MediatR\\MediatR\\CustomMediatR\\CustomMediatR.cs",
+              "RelativeToolTip": "MediatR\\CustomMediatR\\CustomMediatR.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T10:26:05.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "D:\\CustomMediatR\\MediatR\\MediatR\\CustomMediatR\\Publisher.cs",
+              "RelativeDocumentMoniker": "MediatR\\CustomMediatR\\Publisher.cs",
+              "ToolTip": "D:\\CustomMediatR\\MediatR\\MediatR\\CustomMediatR\\Publisher.cs",
+              "RelativeToolTip": "MediatR\\CustomMediatR\\Publisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T10:22:16.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPublisher.cs",
+              "DocumentMoniker": "D:\\CustomMediatR\\MediatR\\MediatR\\CustomMediatR\\IPublisher.cs",
+              "RelativeDocumentMoniker": "MediatR\\CustomMediatR\\IPublisher.cs",
+              "ToolTip": "D:\\CustomMediatR\\MediatR\\MediatR\\CustomMediatR\\IPublisher.cs",
+              "RelativeToolTip": "MediatR\\CustomMediatR\\IPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T10:21:18.226Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

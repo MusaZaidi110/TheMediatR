@@ -1,0 +1,111 @@
+﻿using System.Reflection;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+
+namespace CustomMediatR;
+
+/// <summary>
+/// Extension methods for registering CustomMediatR services.
+/// </summary>
+public static class ServiceCollectionExtensions
+{
+    /// <summary>
+    /// Registers CustomMediatR services and scans the specified assemblies for handlers.
+    /// </summary>
+    /// <param name="services">The service collection.</param>
+    /// <param name="assemblies">Assemblies to scan for handlers. If empty, uses the calling assembly.</param>
+    /// <returns>The service collection for chaining.</returns>
+    public static IServiceCollection AddCustomMediator(this IServiceCollection services, params Assembly[] assemblies)
+    {
+        return services.AddCustomMediator(null, assemblies);
+    }
+
+    /// <summary>
+    /// Registers CustomMediatR services with configuration options.
+    /// </summary>
+    /// <param name="services">The service collection.</param>
+    /// <param name="configure">Optional configuration action.</param>
+    /// <param name="assemblies">Assemblies to scan for handlers. If empty, uses the calling assembly.</param>
+    /// <returns>The service collection for chaining.</returns>
+    public static IServiceCollection AddCustomMediator(
+        this IServiceCollection services,
+        Action<MediatorConfiguration>? configure,
+        params Assembly[] assemblies)
+    {
+        var configuration = new MediatorConfiguration();
+        configure?.Invoke(configuration);
+
+        if (assemblies.Length == 0)
+        {
+            assemblies = [Assembly.GetCallingAssembly()];
+        }
+
+        // Register core services
+        services.TryAdd(new ServiceDescriptor(typeof(ISender), typeof(Sender), configuration.Lifetime));
+        services.TryAdd(new ServiceDescriptor(typeof(IPublisher), typeof(Publisher), configuration.Lifetime));
+        services.TryAdd(new ServiceDescriptor(typeof(IMediator), typeof(Mediator), configuration.Lifetime));
+
+        // Scan and register handlers
+        RegisterHandlers(services, assemblies, configuration.Lifetime);
+
+        return services;
+    }
+
+    private static void RegisterHandlers(IServiceCollection services, Assembly[] assemblies, ServiceLifetime lifetime)
+    {
+        var requestHandlerType = typeof(IRequestHandler<,>);
+        var notificationHandlerType = typeof(INotificationHandler<>);
+
+        foreach (var assembly in assemblies)
+        {
+            Type[] types;
+            try
+            {
+                types = assembly.GetTypes();
+            }
+            catch (ReflectionTypeLoadException ex)
+            {
+                types = ex.Types.Where(t => t is not null).ToArray()!;
+            }
+
+            foreach (var type in types)
+            {
+                if (type.IsAbstract || type.IsInterface || type.IsGenericTypeDefinition)
+                {
+                    continue;
+                }
+
+                foreach (var @interface in type.GetInterfaces())
+                {
+                    if (!@interface.IsGenericType)
+                    {
+                        continue;
+                    }
+
+                    var genericTypeDef = @interface.GetGenericTypeDefinition();
+
+                    if (genericTypeDef == requestHandlerType)
+                    {
+                        services.TryAdd(new ServiceDescriptor(@interface, type, lifetime));
+                    }
+                    else if (genericTypeDef == notificationHandlerType)
+                    {
+                        // Notifications can have multiple handlers
+                        services.Add(new ServiceDescriptor(@interface, type, lifetime));
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// <summary>
+/// Configuration options for CustomMediatR.
+/// </summary>
+public sealed class MediatorConfiguration
+{
+    /// <summary>
+    /// Gets or sets the service lifetime for mediator services. Default is Scoped.
+    /// </summary>
+    public ServiceLifetime Lifetime { get; set; } = ServiceLifetime.Scoped;
+}

@@ -1,0 +1,18 @@
+﻿
+namespace MediatR.CustomMediatR
+{
+    public class Publisher(IServiceProvider provider) : IPublisher
+    {
+        public async Task Publish<TNotification>(TNotification notification, CancellationToken cancellationToken = default) 
+            where TNotification : INotification
+        {
+            var handlerType = typeof(INotificationHandler<>).MakeGenericType(typeof(TNotification));
+            var handlers = provider.GetServices(handlerType);
+
+            foreach (dynamic handler in handlers) 
+            {
+                await handler.Handle((dynamic) notification, cancellationToken);
+            }
+        }
+    }
+}

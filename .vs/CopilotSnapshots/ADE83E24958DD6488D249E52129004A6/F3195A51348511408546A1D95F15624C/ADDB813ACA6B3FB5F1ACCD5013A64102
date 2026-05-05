@@ -1,0 +1,6 @@
+﻿namespace MediatR.CustomMediatR
+{
+    public interface IRequest<TResponse>
+    {
+    }
+}

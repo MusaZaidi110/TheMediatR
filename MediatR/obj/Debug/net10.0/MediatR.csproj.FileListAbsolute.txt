@@ -1,0 +1,14 @@
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\MediatR.csproj.AssemblyReference.cache
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\MediatR.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\MediatR.AssemblyInfoInputs.cache
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\MediatR.AssemblyInfo.cs
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\MediatR.csproj.CoreCompileInputs.cache
+D:\My Documents\MediatR\MediatR\bin\Debug\net10.0\TheMediatR.deps.json
+D:\My Documents\MediatR\MediatR\bin\Debug\net10.0\TheMediatR.dll
+D:\My Documents\MediatR\MediatR\bin\Debug\net10.0\TheMediatR.pdb
+D:\My Documents\MediatR\MediatR\bin\Debug\net10.0\TheMediatR.xml
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\TheMediatR.dll
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\refint\TheMediatR.dll
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\TheMediatR.xml
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\TheMediatR.pdb
+D:\My Documents\MediatR\MediatR\obj\Debug\net10.0\ref\TheMediatR.dll
