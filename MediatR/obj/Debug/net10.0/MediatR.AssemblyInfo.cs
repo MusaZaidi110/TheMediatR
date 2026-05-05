@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A lightweight, high-performance mediator implementation for .NET. Supports reques" +
     "t/response and notification patterns with minimal overhead.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97a32ea5641ca6c1ddbbcc7303b15e57785dc94c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheMediatR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheMediatR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
